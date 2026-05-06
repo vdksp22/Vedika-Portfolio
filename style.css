@@ -458,7 +458,13 @@ section {
 }
 
 .languages .section-title {
+    color: #0d3b66;
+    font-size: 28px;
+    font-weight: 600;
+    letter-spacing: -0.2px;
     text-align: center;
+    margin-bottom: 20px;
+    font-family: 'Montserrat', sans-serif;
 }
 
 .languages-text {
@@ -483,6 +489,7 @@ section {
     content: "• ";
     color: #0d3b66;
 }
+
 
 .art .certs-container {
     max-width: 600px !important;
