@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Portfolio of Vedika Patil - Student, Developer, and Artist from India. Showcasing projects in web development, healthcare tech, and digital art.">
+    <meta name="keywords"
+        content="Vedika Patil, Portfolio, Developer, Artist, India, Web Development, Java, HTML5, CSS3, Art Gallery">
+    <meta name="author" content="Vedika Patil">
+    <title>Vedika Patil</title>
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;600&display=swap" rel="stylesheet">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- EmailJS -->
+    <script defer src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/index.min.js"></script>
+    <script>
+        window.addEventListener('load', () => {
+            if (typeof emailjs !== 'undefined') {
+                emailjs.init('service_placeholder');
+            }
+        });
+    </script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+
+<body>
+
+    <!-- Page Transition -->
+    <script>
+        window.addEventListener('pageshow', function (e) {
+            document.body.style.opacity = '1';
+            document.body.style.transition = '';
+        });
+
+        document.addEventListener('click', function (e) {
+            const anchor = e.target.closest('a');
+            if (anchor && anchor.getAttribute('href') && !anchor.target) {
+                const href = anchor.getAttribute('href');
+                if (href.endsWith('.html')) {
+                    e.preventDefault();
+                    document.body.style.opacity = '0';
+                    document.body.style.transition = 'opacity 0.3s ease-out';
+                    setTimeout(() => {
+                        window.location.href = href;
+                    }, 300);
+                }
+            }
+        });
+    </script>
+
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="nav-left">
+            <span class="nav-name">Vedika Patil</span>
+        </div>
+
+        <div class="nav-right">
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="https://drive.google.com/file/d/1czVq8qdi2UaJ24TttR1KkH0ufja98XUj/view?usp=sharing"
+                        target="_blank">Resume</a></li>
+                <li><a href="https://medium.com/@vedika7799" target="_blank">Blog</a></li>
+                <li><a href="#projects">Projects</a></li>
+            </ul>
+        </div>
+
+        <!-- ONLY ONE ICON GROUP -->
+        <div class="nav-icons">
+            <a href="mailto:vedika7799@gmail.com">
+                <i class="fas fa-envelope"></i>
+            </a>
+
+            <a href="https://github.com/vdksp22" target="_blank">
+                <i class="fab fa-github"></i>
+            </a>
+
+            <a href="https://linkedin.com/in/patilvedikaa" target="_blank">
+                <i class="fab fa-linkedin"></i>
+            </a>
+        </div>
+    </nav>
+
+    <!-- HERO-->
+    <header class="hero" id="home">
+        <div class="hero-content">
+
+            <h1 class="typing-name">
+                <span id="typed-name"></span><span class="cursor">|</span>
+            </h1>
+
+            <p class="intro">
+                I'm an Electronics Student, Programmer and an Artist !
+            </p>
+
+        </div>
+    </header>
+
+
+    <main>
+
+        <!-- About -->
+        <section class="about-block">
+            <div class="about-container">
+
+                <div class="about-left">
+                    <h2 class="section-title">me, briefly</h2>
+
+                    <p>I’m a student driven by curiosity across programming, photography, and art. I prefer exploring
+                        beyond conventional paths and enjoy working across different tools, languages, and creative
+                        directions.
+                    </p>
+                    <p>
+                        I’m continuously building projects, learning through experimentation and execution, and steadily
+                        turning ideas into practical work.
+                    </p>
+                </div>
+                <div class="about-right">
+                    <!-- leave empty for now (image later) -->
+                </div>
+
+            </div>
+        </section>
+
+        <!-- Certifications -->
+        <section class="certs">
+            <h2>Certifications</h2>
+
+            <div class="cert-grid">
+
+                <div class="cert-card">
+                    <h3>Web Development for Everybody</h3>
+                    <p>University of Michigan</p>
+                    <p>HTML5, CSS3</p>
+                    <a href="https://drive.google.com/file/d/1CbUASR7gJ89PPzybDwS2TNfTOzK2P4-G/view?usp=drive_link"
+                        target="_blank" class="cert-link">
+                        View
+                    </a>
+                    <a href="https://drive.google.com/file/d/1qp2F15hz6Qu9_Z0MGh8sYT_hCjePC4SF/view?usp=drive_link"
+                        target="_blank" class="cert-link">
+                        View
+                    </a>
+                </div>
+
+                <div class="cert-card">
+                    <h3>Machine Learning</h3>
+                    <p>Stanford & Deeplearning.ai</p>
+                    <p>Supervised Learning, Algorithms</p>
+                    <a href="https://drive.google.com/file/d/1YKZqxGsgmDZsexh_3DnZdiDuvOwOXyoR/view?usp=drive_link"
+                        target="_blank" class="cert-link">
+                        View
+                    </a>
+                </div>
+
+                <div class="cert-card">
+                    <h3>CS50 Python</h3>
+                    <p>Harvard University</p>
+                    <p>Python</p>
+                    <a href="https://drive.google.com/file/d/12idLEwTIyjJw3NvHtLDYqt04o5VPf48_/view?usp=drive_link"
+                        target="_blank" class="cert-link">
+                        View
+                    </a>
+                </div>
+
+                <div class="cert-card">
+                    <h3>Intro to C Programming</h3>
+                    <p>Duke University</p>
+                    <p>Programming Fundamentals</p>
+                    <a href="https://drive.google.com/file/d/1RWCTEWHhJOL2Z8p-m33qv-gSUMelpp7J/view?usp=drive_link"
+                        target="_blank" class="cert-link">
+                        View
+                    </a>
+                </div>
+
+                <div class="cert-card">
+                    <h3>JAVA Programming</h3>
+                    <p>SWAYAM NPTEL</p>
+                    <a href="https://drive.google.com/file/d/1MZquhtReHbxVMMxQyzncP98YYp3iACjP/view?usp=drive_link"
+                        target="_blank" class="cert-link">
+                        View
+                    </a>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- Projects -->
+        <section id="projects" class="projects">
+            <div class="projects-container">
+                <h2>Projects</h2>
+
+                <div class="projects-grid">
+                    <article class="project-card">
+                        <div class="project-info">
+                            <h3>Resume Builder Web Application</h3>
+                            <p>
+                                Built a resume builder using modern web technologies, featuring a job description
+                                matcher, ATS score checker, and portfolio generator for creating optimized, professional
+                                resumes.
+                            </p>
+
+                            <div class="project-links">
+                                <!-- Live Project -->
+                                <a href="https://resumease--smart-builder.replit.app/" target="_blank"
+                                    rel="noopener noreferrer">
+                                    <i class="fas fa-file"></i>
+                                </a>
+
+                                <!-- GitHub Repo -->
+                                <a href="https://github.com/vdksp22/Resumease" target="_blank"
+                                    rel="noopener noreferrer">
+                                    <i class="fab fa-github"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="project-card">
+                        <div class="project-info">
+                            <h3>Healthcare Assistance App</h3>
+                            <p>Developing a healthcare solution for underserved and low-literacy populations using
+                                icon-based UI, multilingual audio support, and minimal text interaction, improving
+                                usability and accessibility in critical situations.</p>
+                            <p>(Under Development)</p>
+
+                        </div>
+                    </article>
+
+                    <article class="project-card">
+                        <div class="project-info">
+                            <h3>Sign-language based Alert System</h3>
+                            <p>Developing a sign language recognition system that translates hand gestures into text and
+                                speech using computer vision techniques. The system is designed to assist communication
+                                for hearing- and speech-impaired individuals, with potential use in emergency situations
+                                where quick and clear interaction is critical.</p>
+                            <p>(Under Development)</p>
+
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section class="me-bar">
+            <a href="languages.html">
+                <p>vedika, outside of computer..</p>
+            </a>
+        </section>
+
+        <!-- Footer -->
+        <footer class="footer">
+            <div class="container">
+                <p class="footer-connect">Whether it's programming, projects, art, or just a good conversation — feel
+                    free to reach out.</p>
+                <a href="mailto:vedika7799@gmail.com" class="footer-btn">
+                    <i class="fas fa-envelope"></i> Connect
+                </a>
+                <p class="footer-copy">built and designed by vedika patil · all rights reserved</p>
+            </div>
+        </footer>
+
+
+        <!-- Typing Effect -->
+        <script>
+            const nameText = "hey, it's vedika";
+
+            let i = 0;
+
+            function typeName() {
+                const el = document.getElementById("typed-name");
+
+                if (i < nameText.length) {
+                    el.textContent += nameText.charAt(i);
+                    i++;
+                    setTimeout(typeName, 80);
+                }
+            }
+
+            document.addEventListener("DOMContentLoaded", typeName);
+        </script>
+
+
+
+</body>
+
+</html>
